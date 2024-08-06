@@ -6,14 +6,14 @@ const urlSchema = new mongoose.Schema({
         required: true,
         unique: true
     },
-    shortURL: {
+    shortUrl: {
         type: String,
         required: true,
         unique: true
     }
 }, {
     timestamps: true
-});
+}); 
 
 export interface IUrl extends Document {
     originalUrl: string,
